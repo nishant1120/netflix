@@ -11,17 +11,7 @@ function Row({title,fetchUrl,isLargeRow}) {
     const[movies,setMovies]=useState([]);
  //   const[trailerUrl,setTrailerUrl]=useState([]);
 
-    const opts={
-        height:"390",
-        width: "100%",
-        playerVars:{
-            autoplay:1,
-        },
-
-    };
-
-
-    useEffect(() => {
+        useEffect(() => {
         async function fetchData(){
             const request= await axios.get(fetchUrl);
             setMovies(request.data.results);

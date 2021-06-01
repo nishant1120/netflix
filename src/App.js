@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import  Row from './Row';
 import requests from './requests';
-import instance from './axios';
 import Banner from './Banner';
 import Nav from './Navbar';
 
